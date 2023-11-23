@@ -17,12 +17,10 @@ public class Assignment_2 {
 
 	////Initialization
 			WebDriverManager.chromedriver().setup();
-			
-			// Launch website
 			WebDriver driver =new ChromeDriver();
 			
 			// Assignment-2
-			
+			// Launch website
 			driver.get("https://trytestingthis.netlify.app/");
 			driver.manage().window().maximize();
 			
