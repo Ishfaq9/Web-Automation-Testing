@@ -58,19 +58,7 @@ public class Assignment_2 {
 			WebElement button = driver.findElement(By.xpath("/html/body/div[3]/div[2]/form/fieldset/button"));
 			button.click();
 			
-			
-			
-			
-			
-			
-		
-			
-			
-			
-			
-			
-			
-			
+	
 	}
 
 }
