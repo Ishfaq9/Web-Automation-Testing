@@ -4,6 +4,7 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.support.ui.Select;
+import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
 
@@ -47,9 +48,25 @@ public class sauseDemoTest {
 		//check out the product
 		driver.findElement(By.xpath("//button[@id='checkout']")).click();
 	}
+	@Test(priority=5)
+	public void checkoutInfo()
+	{
+		// fill up the necessary infromation
+		driver.findElement(By.xpath("//input[@id='first-name']")).sendKeys("Ishfaq");
+		driver.findElement(By.xpath("//input[@id='last-name']")).sendKeys("Rahman");
+		driver.findElement(By.xpath("//input[@id='postal-code']")).sendKeys("1229");
+		driver.findElement(By.xpath("//input[@id='continue']")).click();
+		
+		// finish the process
+		driver.findElement(By.xpath("//button[@id='finish']")).click();
+	}
 	
-	
-	
+	@AfterTest
+	public void quit()
+	{
+		driver.quit();
+		
+	}
 	
 
 }
