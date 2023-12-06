@@ -1,20 +1,24 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
+<testng-results ignored="0" total="2" passed="2" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2023-12-06T19:51:36 OMST" name="Default suite" finished-at="2023-12-06T19:51:39 OMST" duration-ms="3397">
+  <suite started-at="2023-12-06T20:12:18 OMST" name="Default suite" finished-at="2023-12-06T20:12:22 OMST" duration-ms="3489">
     <groups>
     </groups>
-    <test started-at="2023-12-06T19:51:36 OMST" name="Default test" finished-at="2023-12-06T19:51:39 OMST" duration-ms="3397">
+    <test started-at="2023-12-06T20:12:18 OMST" name="Default test" finished-at="2023-12-06T20:12:22 OMST" duration-ms="3489">
       <class name="webTest.sauseDemoTest">
-        <test-method is-config="true" signature="init()[pri:0, instance:webTest.sauseDemoTest@59309333]" started-at="2023-12-06T19:51:36 OMST" name="init" finished-at="2023-12-06T19:51:39 OMST" duration-ms="3012" status="PASS">
+        <test-method is-config="true" signature="init()[pri:0, instance:webTest.sauseDemoTest@245b4bdc]" started-at="2023-12-06T20:12:18 OMST" name="init" finished-at="2023-12-06T20:12:21 OMST" duration-ms="2981" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- init -->
-        <test-method signature="logIn()[pri:0, instance:webTest.sauseDemoTest@59309333]" started-at="2023-12-06T19:51:39 OMST" name="logIn" finished-at="2023-12-06T19:51:39 OMST" duration-ms="330" status="PASS">
+        <test-method signature="logIn()[pri:1, instance:webTest.sauseDemoTest@245b4bdc]" started-at="2023-12-06T20:12:21 OMST" name="logIn" finished-at="2023-12-06T20:12:21 OMST" duration-ms="356" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- logIn -->
+        <test-method signature="addTocart()[pri:2, instance:webTest.sauseDemoTest@245b4bdc]" started-at="2023-12-06T20:12:21 OMST" name="addTocart" finished-at="2023-12-06T20:12:22 OMST" duration-ms="95" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- addTocart -->
       </class> <!-- webTest.sauseDemoTest -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->

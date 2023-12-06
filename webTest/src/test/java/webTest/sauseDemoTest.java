@@ -20,13 +20,35 @@ public class sauseDemoTest {
 		driver.manage().window().maximize();
 	}
 	
-	@Test
-	public void logIn()
+	@Test(priority=1)
+	public void logIn() // logIn using relative path
 	{
 		driver.findElement(By.xpath("//input[@id='user-name']")).sendKeys("standard_user");
 		driver.findElement(By.xpath("//input[@id='password']")).sendKeys("secret_sauce");
 		driver.findElement(By.xpath("//input[@id='login-button']")).click();
 	}
+	
+	@Test(priority=2)
+	public void addTocart() // add to cart "Test.allTheThings() T-Shirt (Red)"
+	{
+		driver.findElement(By.xpath("//button[@id='add-to-cart-test.allthethings()-t-shirt-(red)']")).click();
+	}
+	
+	@Test(priority=3)
+	public void viewProduct()
+	{
+		//view product 
+		driver.findElement(By.xpath("//a[@class='shopping_cart_link']")).click();
+	}
+	
+	@Test(priority=4)
+	public void checkOut()
+	{
+		//check out the product
+		driver.findElement(By.xpath("//button[@id='checkout']")).click();
+	}
+	
+	
 	
 	
 
